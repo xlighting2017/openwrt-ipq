@@ -30,7 +30,7 @@ Acked-by: Jeff Johnson <quic_jjohnson@quicinc.com>
  
  enum nl80211_he_ru_alloc ath11k_mac_phy_he_ru_to_nl80211_he_ru_alloc(u16 ru_phy)
  {
-@@ -5316,7 +5316,7 @@ static int ath11k_mac_station_add(struct
+@@ -5314,7 +5314,7 @@ static int ath11k_mac_station_add(struct
  	if (ab->hw_params.vdev_start_delay &&
  	    !arvif->is_started &&
  	    arvif->vdev_type != WMI_VDEV_TYPE_AP) {
@@ -39,7 +39,7 @@ Acked-by: Jeff Johnson <quic_jjohnson@quicinc.com>
  		if (ret) {
  			ath11k_warn(ab, "failed to delay vdev start: %d\n", ret);
  			goto free_tx_stats;
-@@ -8163,8 +8163,8 @@ unlock:
+@@ -8161,8 +8161,8 @@ unlock:
  	mutex_unlock(&ar->conf_mutex);
  }
  

@@ -379,7 +379,7 @@ Signed-off-by: Gautham Kumar Senthilkumaran <quic_gauthamk@quicinc.com>
  #endif /* __MAC80211_DRIVER_OPS */
 --- a/net/mac80211/mesh.h
 +++ b/net/mac80211/mesh.h
-@@ -315,6 +315,10 @@ void mesh_rx_path_sel_frame(struct ieee8
+@@ -320,6 +320,10 @@ void mesh_rx_path_sel_frame(struct ieee8
  			    struct ieee80211_mgmt *mgmt, size_t len);
  struct mesh_path *
  mesh_path_add(struct ieee80211_sub_if_data *sdata, const u8 *dst);
@@ -390,7 +390,7 @@ Signed-off-by: Gautham Kumar Senthilkumaran <quic_gauthamk@quicinc.com>
  
  int mesh_path_add_gate(struct mesh_path *mpath);
  int mesh_path_send_to_gates(struct mesh_path *mpath);
-@@ -356,6 +360,7 @@ void mesh_path_discard_frame(struct ieee
+@@ -361,6 +365,7 @@ void mesh_path_discard_frame(struct ieee
  void mesh_path_tx_root_frame(struct ieee80211_sub_if_data *sdata);
  
  bool mesh_action_is_path_sel(struct ieee80211_mgmt *mgmt);
